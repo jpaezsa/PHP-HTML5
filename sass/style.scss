@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* 2012 Pensertrust S.A. de C.V.
+* This CSS File was developed by Pensertrust -> http://pensertrust.com
+* 
+* Developer: Samuel Bran -> http://samuelbran.com
+* Date:
+* Project:
+*/
+
+@import "base";
+@import "css/fonts.css";
+
+/* BASIC STYLES
+-----------------------------------------------------------------------------------------------*/
+* {
+	margin: 0; 
+	padding: 0; 
+	outline: 0; 
+	border: none; 
+	text-decoration: none; 
+	list-style-type: none;
+}
+html {
+	height: 100%;
+	background: $main-background;
+}
+body {
+	height: 100%;
+	font-size: $body-text-size /* 12/16*/;
+	color: $text-color;
+}
+h1, h2, h3,
+h4, h5, h6 {
+	font-weight: normal;
+}
+a {
+	color: $primary-color;
+
+ &:hover {
+ 		text-decoration: underline;
+	}
+}
+
+p {
+	margin: 20px 0;
+	line-height: 1.50em;
+	text-align: justify;
+}
+img {
+	max-width: 100%;
+}
+.clearfloat:after {
+	display: block; 
+	content: ""; 
+	clear: both; 
+	visibility: hidden; 
+	height: 0;
+}
+.float-left {
+	float: left;
+	width: 50%;
+}
+.float-right {
+	float: right;
+	width: 50%;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#main {
+	min-height: 500px;
+}
+.content {}
+.sidebar {}
+
+/* =Header
+-----------------------------------------------------------------------------------------*/
+header {
+	padding-top: 10px;
+	margin-bottom: 20px;
+
+	#name-desc {
+		float: left;
+	}
+
+	h3 {
+		color: $light-gray;
+	}
+}
+
+/* =Navigation
+-----------------------------------------------------------------------------------------*/
+nav {
+	padding: 10px 0;
+	float: right;
+
+	ul {
+		padding: 0;
+
+		li {
+			float: left;
+			margin: 0 10px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+/* =Footer
+-----------------------------------------------------------------------------------------*/
+footer {
+	.float-left {
+		text-align: left;
+	}
+	.author-info {
+		text-align: right;
+	}
+}
+
+/* =Error 404 Page
+-----------------------------------------------------------------------------------------*/
+#error404 {
+	background: url($img_dir + "alert_bg.png") bottom right no-repeat;
+
+	h1 {
+		font-size: 7.8125em;
+		color: #c3c3c3;
+	}
+
+	p {
+		color: #a4a4a4;
+	}
+
+	.go-home {
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		span {
+			font-size: 1.1666666666666666666666666666667em;
+		}
+
+	}
+}
+
+/* =Pensertrust
+-----------------------------------------------------------------------------------------*/
+.pensertrust {
+	position: relative;
+	top: 2px;
+	width: 86px;
+	height: 16px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+	.wrapper {
+		width: 90%;
+	}
+
+	#name-desc, nav {
+		float: none;
+		width: 100%;
+	}
+
+	#name-desc {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+}
