@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 2012 Pensertrust S.A. de C.V.
 * This CSS File was developed by Pensertrust -> http://pensertrust.com
-* 
+*
 * Developer: Samuel Bran -> http://samuelbran.com
 * Date:
 * Project:
@@ -13,11 +13,11 @@
 /* BASIC STYLES
 -----------------------------------------------------------------------------------------------*/
 * {
-	margin: 0; 
-	padding: 0; 
-	outline: 0; 
-	border: none; 
-	text-decoration: none; 
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: none;
+	text-decoration: none;
 	list-style-type: none;
 }
 html {
@@ -26,7 +26,6 @@ html {
 }
 body {
 	height: 100%;
-	font-size: $body-text-size /* 12/16*/;
 	color: $text-color;
 }
 h1, h2, h3,
@@ -50,10 +49,10 @@ img {
 	max-width: 100%;
 }
 .clearfloat:after {
-	display: block; 
-	content: ""; 
-	clear: both; 
-	visibility: hidden; 
+	display: block;
+	content: "";
+	clear: both;
+	visibility: hidden;
 	height: 0;
 }
 .float-left {

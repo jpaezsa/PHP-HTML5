@@ -1,7 +1,7 @@
 @import url(css/fonts.css);
 /* 2012 Pensertrust S.A. de C.V.
 * This CSS File was developed by Pensertrust -> http://pensertrust.com
-* 
+*
 * Developer: Samuel Bran -> http://samuelbran.com
 * Date:
 * Project:
@@ -14,102 +14,129 @@
   outline: 0;
   border: none;
   text-decoration: none;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 html {
   height: 100%;
-  background: white; }
+  background: white;
+}
 
 body {
   height: 100%;
-  font-size: 0.75em;
-  color: #333333; }
+  color: #333333;
+}
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 a {
-  color: #097cde; }
-  a:hover {
-    text-decoration: underline; }
+  color: #097cde;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 p {
   margin: 20px 0;
   line-height: 1.50em;
-  text-align: justify; }
+  text-align: justify;
+}
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .clearfloat:after {
   display: block;
   content: "";
   clear: both;
   visibility: hidden;
-  height: 0; }
+  height: 0;
+}
 
 .float-left {
   float: left;
-  width: 50%; }
+  width: 50%;
+}
 
 .float-right {
   float: right;
-  width: 50%; }
+  width: 50%;
+}
 
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+}
 
 #main {
-  min-height: 500px; }
+  min-height: 500px;
+}
 
 /* =Header
 -----------------------------------------------------------------------------------------*/
 header {
   padding-top: 10px;
-  margin-bottom: 20px; }
-  header #name-desc {
-    float: left; }
-  header h3 {
-    color: #999999; }
+  margin-bottom: 20px;
+}
+header #name-desc {
+  float: left;
+}
+header h3 {
+  color: #999999;
+}
 
 /* =Navigation
 -----------------------------------------------------------------------------------------*/
 nav {
   padding: 10px 0;
-  float: right; }
-  nav ul {
-    padding: 0; }
-    nav ul li {
-      float: left;
-      margin: 0 10px; }
-      nav ul li:first-child {
-        margin-left: 0; }
-      nav ul li:last-child {
-        margin-right: 0; }
+  float: right;
+}
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  margin: 0 10px;
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
 
 /* =Footer
 -----------------------------------------------------------------------------------------*/
 footer .float-left {
-  text-align: left; }
+  text-align: left;
+}
 footer .author-info {
-  text-align: right; }
+  text-align: right;
+}
 
 /* =Error 404 Page
 -----------------------------------------------------------------------------------------*/
 #error404 {
-  background: url("css/images/alert_bg.png") bottom right no-repeat; }
-  #error404 h1 {
-    font-size: 7.8125em;
-    color: #c3c3c3; }
-  #error404 p {
-    color: #a4a4a4; }
-  #error404 .go-home:hover {
-    text-decoration: underline; }
-  #error404 .go-home span {
-    font-size: 1.1666666666666666666666666666667em; }
+  background: url("css/images/alert_bg.png") bottom right no-repeat;
+}
+#error404 h1 {
+  font-size: 7.8125em;
+  color: #c3c3c3;
+}
+#error404 p {
+  color: #a4a4a4;
+}
+#error404 .go-home:hover {
+  text-decoration: underline;
+}
+#error404 .go-home span {
+  font-size: 1.1666666666666666666666666666667em;
+}
 
 /* =Pensertrust
 -----------------------------------------------------------------------------------------*/
@@ -117,16 +144,21 @@ footer .author-info {
   position: relative;
   top: 2px;
   width: 86px;
-  height: 16px; }
+  height: 16px;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .wrapper {
-    width: 90%; }
+    width: 90%;
+  }
 
   #name-desc, nav {
     float: none;
-    width: 100%; }
+    width: 100%;
+  }
 
   #name-desc {
     text-align: center;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+  }
+}

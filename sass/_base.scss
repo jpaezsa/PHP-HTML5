@@ -8,12 +8,24 @@ $img-dir: "css/images/";
 $body-text-size: 0.75em;
 
 //MIXINS
-@mixin rounded-border($radius: 3px) {
-	-moz-border-radius: $radius;
-	-webkit-border-radius: $radius;
-	border-radius: $radius;
-}
 
 @mixin text-shadow($color, $x: 1px, $y: 1px, $blur: 0) {
 	text-shadow: $x $y $blur $color;
+}
+@mixin transition ($options) {
+	-webkit-transition: $options;
+	-moz-transition: $options;
+	transition: $options;
+}
+@mixin border-radius ($options) {
+	-webkit-border-radius: $options;
+	-moz-border-radius: $options;
+	-o-border-radius: $options;
+	border-radius: $options;
+}
+@mixin box-shadow ($options) {
+	-webkit-box-shadow: $options;
+	-moz-box-shadow: $options;
+	-o-box-shadow: $options;
+	box-shadow: $options;
 }
