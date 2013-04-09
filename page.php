@@ -4,16 +4,16 @@
 
 <body>
 <?php include('top.php'); ?>
-<div class="wrapper"><!--WRAPPER STARTS-->
+<div class="wrapper">
 
-	<section id="main"><!--MAIN STARTS-->
+	<section id="main">
 
-		<div class="content"><!--CONTENT STARTS-->
-		</div><!--CONTENT ENDS-->
+		<div class="sidebar">
+		</div>
 
-		<div class="sidebar"><!--SIDEBAR STARTS-->
-		</div><!--SIDEBAR ENDS-->
+		<div class="content">
+		</div>
 
 	</section>
-</div><!--WRAPPER ENDS-->
+</div>
 <?php include('footer.php'); ?>

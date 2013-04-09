@@ -1,4 +1,4 @@
-<header><!--HEADER STARTS-->
+<header>
 	<div class="wrapper clearfloat">
 		<div id="name-desc">
 			<h1><?php the_website('name'); ?></h1>
@@ -6,4 +6,4 @@
 		</div>
 		<?php include('nav.php'); ?>
 	</div>
-</header><!--HEADER ENDS-->
+</header>

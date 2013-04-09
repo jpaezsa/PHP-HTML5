@@ -3,16 +3,16 @@
 </head>
 
 <body id="error404">
-<div class="wrapper"><!--WRAPPER STARTS-->
+<div class="wrapper">
 
-<section id="main"><!--MAIN STARTS-->
+<section id="main">
 
-	<div class="content"><!--CONTENT STARTS-->
+	<div class="content">
 		<a href="<?php the_website('url'); ?>" class="go-home"><span>&larr;</span> Volver a <?php the_website('name'); ?></a>
 		<h1>Error 404</h1>
 		<p>No Encontrado</p>
-	</div><!--CONTENT ENDS-->
+	</div>
 
 </section>
-</div><!--WRAPPER ENDS-->
+</div>
 <?php include('footer.php'); ?>

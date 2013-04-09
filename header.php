@@ -27,11 +27,6 @@
 	<link href="<?php the_website('url'); ?>" rel="index" title="<?php the_website('title'); ?>"/>
 	<!--[if IE]>
 		<script src="js/html5shiv.js"></script>
-		<script src="sistemas/files/focus.js"></script>
 		<link rel="stylesheet" href="css/ie.css" media="screen"/>
 	<![endif]-->
 	<link rel="stylesheet" href="style.css" media="screen"/>
-	<link rel="stylesheet" href="css/normalize.css" media="screen"/>
-	<link rel="stylesheet" href="sistemas/files/themes/default.css" media="screen"/>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/custom.js"></script>
