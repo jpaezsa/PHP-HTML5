@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "base";
-@import "css/fonts.css";
+@import "fonts";
+@import "normalize.scss";
 
 /* BASIC STYLES
 -----------------------------------------------------------------------------------------------*/
@@ -12,20 +13,16 @@
 	text-decoration: none;
 	list-style-type: none;
 }
-html {
+html,
+body,{
 	height: 100%;
-	background: $main-background;
-}
-body {
-	height: 100%;
-	color: $text-color;
 }
 h1, h2, h3,
 h4, h5, h6 {
 	font-weight: normal;
 }
 a {
-	color: $primary-color;
+	text-decoration: none;
 
  &:hover {
  		text-decoration: underline;
@@ -33,9 +30,7 @@ a {
 }
 
 p {
-	margin: 20px 0;
-	line-height: 1.50em;
-	text-align: justify;
+	line-height: 1.5em;
 }
 img {
 	max-width: 100%;
@@ -56,44 +51,27 @@ img {
 	width: 50%;
 }
 .wrapper {
-	width: 960px;
+	width: 90%;
+	max-width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#main {
-	min-height: 500px;
-}
+#main {}
 .content {}
 .sidebar {}
 
 /* =Header
 -----------------------------------------------------------------------------------------*/
-header {
-	padding-top: 10px;
-	margin-bottom: 20px;
-
-	#name-desc {
-		float: left;
-	}
-
-	h3 {
-		color: $light-gray;
-	}
-}
 
 /* =Navigation
 -----------------------------------------------------------------------------------------*/
 nav {
-	padding: 10px 0;
-	float: right;
 
 	ul {
 		padding: 0;
 
 		li {
-			float: left;
-			margin: 0 10px;
 
 			&:first-child {
 				margin-left: 0;
@@ -113,19 +91,11 @@ nav {
 
 /* =Footer
 -----------------------------------------------------------------------------------------*/
-footer {
-	.float-left {
-		text-align: left;
-	}
-	.author-info {
-		text-align: right;
-	}
-}
 
 /* =Error 404 Page
 -----------------------------------------------------------------------------------------*/
 #error404 {
-	background: url($img_dir + "alert_bg.png") bottom right no-repeat;
+	background: url("css/images/alert_bg.png") bottom right no-repeat;
 
 	h1 {
 		font-size: 7.8125em;
@@ -147,31 +117,4 @@ footer {
 		}
 
 	}
-}
-
-/* =Pensertrust
------------------------------------------------------------------------------------------*/
-.pensertrust {
-	position: relative;
-	top: 2px;
-	width: 86px;
-	height: 16px;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
-	.wrapper {
-		width: 90%;
-	}
-
-	#name-desc, nav {
-		float: none;
-		width: 100%;
-	}
-
-	#name-desc {
-		text-align: center;
-		margin-bottom: 10px;
-	}
-
 }
