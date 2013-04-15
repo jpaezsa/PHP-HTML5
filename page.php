@@ -1,9 +1,9 @@
-<?php include('header.php'); ?>
+<?php include 'header.php'; ?>
 <title>Title</title>
 </head>
 
 <body>
-<?php include('top.php'); ?>
+<?php include 'top.php'; ?>
 <div class="wrapper">
 
 	<section id="main">
@@ -16,4 +16,4 @@
 
 	</section>
 </div>
-<?php include('footer.php'); ?>
+<?php include 'footer.php'; ?>

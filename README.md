@@ -1,4 +1,3 @@
-PHP-HTML5
-=========
+##PHP-HTML5
 
-My own base for web projects without CMS, PHP and HTML5
+My own base for web projects without CMS.

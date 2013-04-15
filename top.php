@@ -4,6 +4,6 @@
 			<h1><?php the_website('name'); ?></h1>
 			<h3><?php the_website('description'); ?></h3>
 		</div>
-		<?php include('nav.php'); ?>
+		<?php include 'nav.php'; ?>
 	</div>
 </header>

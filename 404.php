@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php include 'header.php'; ?>
 <title>Error 404 - No encontramos lo que buscas</title>
 </head>
 
@@ -15,4 +15,4 @@
 
 </section>
 </div>
-<?php include('footer.php'); ?>
+<?php include 'footer.php'; ?>
