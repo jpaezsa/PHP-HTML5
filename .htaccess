@@ -10,7 +10,7 @@
   RewriteRule .* $0.php
 
 #Redirect 404 Errors
-  ErrorDocument 404 /bases/HTML/404.php
+  ErrorDocument 404 /PHP-HTML5/404.php
 
 # Pass the default character set
   AddDefaultCharset utf-8
