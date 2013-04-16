@@ -15,7 +15,7 @@
 		$email_body .= "Mensaje: " . $message;
 
 		//Send the email
-		mail($to, $subject, $message, $headers);
+		mail($to, $subject, $email_body, $headers);
 
 		header("Location: contacto.php?status=gracias");
 		exit;
