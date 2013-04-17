@@ -7,12 +7,14 @@
 		$to = "josesbran@gmail.com";
 		$subject 	= "Nuevo Mensaje de " . $name;
 		$headers 	= "From: Website <info@website.com>\r\n";
+		$headers .= "Reply-To: ". strip_tags($email) . "\r\n";
+		//$headers .= "CC: name@example.com\r\n";
 		$headers .= "MIME-Version: 1.0\r\n";
 		$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 		$email_body = "";
-		$email_body .= "Nombre: " . $name . "<br>";
-		$email_body .= "Email: " . $email . "<br>";
-		$email_body .= "Mensaje: " . $message;
+		$email_body .= "<b>Nombre:</b> " . $name . "<br>";
+		$email_body .= "<b>Email: </b>" . $email . "<br><br>";
+		$email_body .= $message;
 
 		//Send the email
 		mail($to, $subject, $email_body, $headers);
